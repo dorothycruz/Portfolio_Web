@@ -1,0 +1,200 @@
+/* --------------------------------------------------
+   index style
+-----------------------------------------------------*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	direction: ltr;
+}
+
+body {
+    margin: 0;
+    font-family: "source-sans-pro", sans-serif;
+    color: #4D4D4D;
+}
+
+.intro {
+   background: #FFDB00;
+}
+
+#resume {
+    background: #D6D6D6;
+    width: 100%;
+    height: 800px;
+}
+
+.social a:hover {
+    border-bottom: 3px solid #fff;
+    color: #fff;
+/*    padding: 4px;*/
+}
+
+a > p.portfolio {
+    text-decoration: none;
+    color: #4D4D4D;
+    font-weight: normal;
+    font-size: 1.25em;
+}
+
+a.logotype {
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #4D4D4D;
+}
+
+/*nav bar*/
+
+nav {
+    margin: 0;
+    display:-webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+    
+}
+
+nav ul.navbar  {
+    list-style-type: none;
+    display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+    flex-flow: row wrap;
+    width: 95%;
+   -webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+nav li {
+    align-self: center;
+    display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-align-items: center;
+	-ms-flex-pack: center;
+	align-items: center;
+    margin-right: 30px;
+    
+}
+
+nav li.space {
+    margin-right: 100px;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+a.logo_c {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.logotype {
+    margin-left: 20px;
+}
+
+/*index subcontent*/
+
+.intro2 {
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    -webkit-flex-flow: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 7em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 4.5em;
+    font-weight: normal;
+}
+
+h6 {
+    font-family: SourceSansPro-Light;
+    font-size: 1.25em;
+    font-weight: lighter;
+}
+
+/*profile content*/
+
+div#resume {
+    display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+section.profile {
+    display: flex;
+    width: 95%;
+}
+
+h3.ptitle {
+    font-size: 3.125em;
+}
+
+p.pdescription {
+    font-size: 1.875em;
+    font-weight: normal;
+    text-align: justify;
+}
+
+article.description {
+    flex: 1;
+}
+
+article.links {
+    flex: 1;
+}
+
+hgroup {
+    text-align: center;
+}
+
+/*footer*/
+
+footer {
+    background-color: EFEFEF;
+    text-align: center;
+    margin-top: 30px;
+    height: 60px;
+}
+
+
+/* --------------------------------------------------
+   desktop screen styles
+-----------------------------------------------------*/
+
+@media only screen and (max-width: 720px) {
+    
+}
+
+
+/* --------------------------------------------------
+   tablet screen styles
+-----------------------------------------------------*/
+
+@media only screen and (max-width: 720px) {
+}
+
+
+/* --------------------------------------------------
+   cellphone screen styles
+-----------------------------------------------------*/
+
+@media only screen and (max-width: 720px) {
+}
