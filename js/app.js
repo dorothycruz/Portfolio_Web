@@ -8,4 +8,10 @@ $(document).ready(function() {
        fullScreen();
    });
     
+     $("#changed").typed({
+            strings: ["friend", "writer", "model", "designer"],
+            typeSpeed: 25
+    });
+
+    
 });
