@@ -1,0 +1,19 @@
+{
+    "sass.enabled": false,
+    "sass.compiler": "libsass",
+    "path": {
+        "css/style.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "includePaths": [
+                    "../node_modules/bourbon/app/assets/stylesheets/"
+                ],
+                "outputDir": "../css/",
+                "imagePath": null,
+                "sourceComments": false,
+                "outputStyle": "nested"
+            },
+            "linting.collapsed": false
+        }
+    }
+}

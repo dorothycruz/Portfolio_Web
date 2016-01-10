@@ -9,7 +9,7 @@ $(document).ready(function() {
    });
     
      $("#changed").typed({
-            strings: ["friend", "writer", "model", "designer"],
+            strings: ["a friend", "a writer", "a model", "a designer", "human"],
             typeSpeed: 25
     });
 
