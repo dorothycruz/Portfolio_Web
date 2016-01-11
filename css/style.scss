@@ -2,6 +2,7 @@
 
 $basefont: "source-sans-pro", sans-serif;
 $basecolor: #4D4D4D;
+$bodytext: #7E7E7E;
 
 /* --------------------------------------------------
    index style
@@ -21,12 +22,6 @@ body {
 
 .intro {
    background: #FFDB00;
-}
-
-#resume {
-    background: #D6D6D6;
-    width: 100%;
-    height: 800px;
 }
 
 a {
@@ -68,13 +63,9 @@ nav {
     }
     
     li {
-    align-self: center;
-    display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-    -webkit-align-items: center;
-	-ms-flex-pack: center;
-	align-items: center;
+    @include align-self(center);
+    @include display(flex);
+	@include align-items(center);
     margin-right: 30px;
         
         &.space {
@@ -102,10 +93,9 @@ a.logo_c {
 
 .intro2 {
     height: 300px;
-    display: flex;
-    flex-flow: column;
-    -webkit-flex-flow: column;
-    align-items: center;
+    @include display(flex);
+    @include flex-flow(column);
+    @include align-items(center);
     margin-top: 9%;
 }
 
@@ -137,79 +127,41 @@ h6 {
 }
 
 #down {
-    -moz-animation: bounce2 2s infinite;
-  -webkit-animation: bounce2 2s infinite;
-  animation: bounce2 2s infinite;
+  @include animation(bounce2 2s infinite);
 }
 
 .resume_downt {
     margin-top: 2%;
 }
 
-@-moz-keyframes bounce2 {
+@include keyframes(bounce2) {
   0%, 20%, 50%, 80%, 100% {
-    -moz-transform: translateY(0);
-    transform: translateY(0);
+    @include transform(translateY(0));
   }
   40% {
-    -moz-transform: translateY(-30px);
-    transform: translateY(-30px);
+    @include transform(translateY(-30px));
   }
   60% {
-    -moz-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-}
-@-webkit-keyframes bounce2 {
-  0%, 20%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-}
-
-@keyframes bounce2 {
-  0%, 20%, 50%, 80%, 100% {
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -moz-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -moz-transform: translateY(-15px);
-    -ms-transform: translateY(-15px);
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
+    @include transform(translateY(-15px));
   }
 }
 
 /*profile content*/
 
-div#resume {
-    display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-    -webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+#resume {
+    background: #D6D6D6;
+    width: 100%;
+    height: 600px;
+    
+    div& {
+    @include display(flex);
+	@include justify-content(center);
+    }
 }
 
 section.profile {
     display: flex;
-    width: 95%;
+    width: 90%;
 }
 
 h3.ptitle {
@@ -217,18 +169,23 @@ h3.ptitle {
 }
 
 p.pdescription {
-    font-size: 1.875em;
+    font-size: 1.6em;
     font-weight: normal;
-    text-align: justify;
+    color: $bodytext;
 }
 
 article {
+    @include align-self(center);
+    
     &.description {
-        flex: 1;
+    &.description {
+        @include flex(1);
     }
     
     &.links {
-        flex:1;
+        @include flex(1);
+        @include display(flex);
+        @include flex-flow(column);
     }
 }
 
@@ -243,4 +200,18 @@ footer {
     text-align: center;
     padding-top: 30px;
     height: 60px;
+}
+
+/* --------------------------------------------------
+   tablet screen styles
+-----------------------------------------------------*/
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) {
+      .intro2 {
+          margin-top: 30%;
+          display: block;
+      }
+
 }

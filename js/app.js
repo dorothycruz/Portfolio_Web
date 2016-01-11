@@ -10,8 +10,17 @@ $(document).ready(function() {
     
      $("#changed").typed({
             strings: ["a friend", "a writer", "a model", "a designer", "human"],
-            typeSpeed: 25
+            typeSpeed: 30
+    });
+    
+    $(".resume_downa").on("click", function( e ) {
+
+        e.preventDefault();
+
+        $("body, html").animate({ 
+            scrollTop: $( $(this).attr('href') ).offset().top 
+        }, 600);
+           
     });
 
-    
 });
