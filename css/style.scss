@@ -1,12 +1,18 @@
 @import "bourbon";
+@import "portfolio";
 
 $basefont: "source-sans-pro", sans-serif;
 $basecolor: #4D4D4D;
 $bodytext: #7E7E7E;
+$basebg: #EFEFEF;
 
 /* --------------------------------------------------
    index style
 -----------------------------------------------------*/
+html {
+    font-size: 16px;
+}
+
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
 	margin: 0;
 	padding: 0;
@@ -18,6 +24,7 @@ body {
     margin: 0;
     font-family: $basefont;
     color: $basecolor;
+    font-size: 62.5%; //    1em = 10px
 }
 
 .intro {
@@ -29,7 +36,7 @@ a {
     color: $basecolor;
     
     &.logotype {
-    font-size: 1.25em;
+    font-size: 2em; //20px
     font-weight: normal;
     }
     
@@ -37,7 +44,7 @@ a {
     text-decoration: none;
     color: $basecolor;
     font-weight: normal;
-    font-size: 1.25em;
+    font-size: 2em; //20px
     }
         
     .social &:hover {
@@ -66,10 +73,10 @@ nav {
     @include align-self(center);
     @include display(flex);
 	@include align-items(center);
-    margin-right: 30px;
+    margin-right: 3%;
         
         &.space {
-            margin-right: 100px;
+            margin-right: 10%;
         }
     
     }
@@ -81,44 +88,45 @@ nav {
 }
 
 a.logo_c {
-    font-size: 5em;
+    font-size: 8em;
     font-weight: bold;
 }
 
 .logotype {
-    margin-left: 20px;
+    margin-left: 7%;
+    width: 125px;
 }
 
 /*index subcontent*/
 
 .intro2 {
-    height: 300px;
+//    height: 300px;
     @include display(flex);
     @include flex-flow(column);
     @include align-items(center);
-    margin-top: 9%;
+    margin-top: 10%;
 }
 
 h1 {
-    font-size: 6.7em;
+    font-size: 9em;
     font-weight: bold;
 }
 
 h2 {
-    font-size: 3.8em;
+    font-size: 7.2em; //72px
     font-weight: normal;
     margin-top: -10px;
 }
 
 h6 {
     font-family: $basefont;
-    font-size: 1.25em;
+    font-size: 2em; //20px
     font-weight: lighter;
 }
 
 
 .change {
-    font-size: 2.4em;
+    font-size: 4em; //40px
     font-weight: lighter;
 }
 
@@ -151,12 +159,9 @@ h6 {
 #resume {
     background: #D6D6D6;
     width: 100%;
-    height: 600px;
-    
-    div& {
+    height: 700px;
     @include display(flex);
 	@include justify-content(center);
-    }
 }
 
 section.profile {
@@ -165,11 +170,12 @@ section.profile {
 }
 
 h3.ptitle {
-    font-size: 3.125em;
+    font-size: 5em; //50px
+    margin-bottom: 20px;
 }
 
 p.pdescription {
-    font-size: 1.6em;
+    font-size: 2.5em; //25px
     font-weight: normal;
     color: $bodytext;
 }
@@ -178,7 +184,6 @@ article {
     @include align-self(center);
     
     &.description {
-    &.description {
         @include flex(1);
     }
     
@@ -186,7 +191,7 @@ article {
         @include flex(1);
         @include display(flex);
         @include flex-flow(column);
-    }
+        }
 }
 
 hgroup {
@@ -196,22 +201,108 @@ hgroup {
 /*footer*/
 
 footer {
-    background-color: #EFEFEF;
+    background-color: $basebg;
     text-align: center;
     padding-top: 30px;
     height: 60px;
+    font-size: 1.5em;
 }
 
+/* --------------------------------------------------
+   portfolio style
+-----------------------------------------------------*/
+
+.portfolio2 {
+    background-color: $basebg;
+}
+
+.grid2 {
+    @include display(flex);
+    justify-content: center;
+}
+
+div.grid {
+    @include display(flex);
+    @include justify-content(space-around);
+    @include flex-flow(wrap);
+    width: 90%;
+}
+
+section >div {
+    height: 400px;
+    flex: 1;
+    width: 300px;
+    margin-bottom: 5%;
+}
+
+.pailasq {
+    background-color: #FA6D20;
+}
+
+.paypalsq {
+    background-color: #01A6E5;
+}
+
+.zumsq {
+    background-color: #EE3931;
+}
+
+
+.bublesq {
+    background-color: #BD1C42;
+}
+
+.addamsq {
+    background-color: #191818;
+}
+
+.postersq {
+    background-color: #D8D8D8;
+}
+
+.blendersq {
+    background-color: #DD3745;
+}
+
+.javasq {
+    background-color: #38E6A6;
+}
+
+.java2sq {
+    background-color: #CEEFFF;
+}
+
+.relevesq {
+    background-color: #DBB27B;
+}
+
+.infosq {
+    background-color: #FAFBFA;
+}
+
+/* --------------------------------------------------
+   cellphone screen styles
+-----------------------------------------------------*/
+
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 480px) {
+      
+      body {
+    font-size: 50%; //    1em = 10px
+}
+
+}
+    
 /* --------------------------------------------------
    tablet screen styles
 -----------------------------------------------------*/
 
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) {
-      .intro2 {
-          margin-top: 30%;
-          display: block;
-      }
+@media only screen
+    and (min-width: 480px)
+    and (max-width: 768px) {
+      
 
 }
+    
+    
