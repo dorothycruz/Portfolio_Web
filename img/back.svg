@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="23px" viewBox="0 0 16 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_keyboard_arrow_right_black_24px copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M0.152666667,20.3455642 L9.618,11.5717384 L0.152666667,2.79791257 L3.06666667,0.102685032 L15.4666667,11.5717384 L3.06666667,23.0407918 L0.152666667,20.3455642 Z"></path>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Historia_Diseno---HD" sketch:type="MSArtboardGroup" transform="translate(-1160.000000, -49.000000)">
+            <g id="Nav_Bar" sketch:type="MSLayerGroup" transform="translate(52.843750, 33.000000)">
+                <g id="ic_keyboard_arrow_right_black_24px-copy" transform="translate(1115.140625, 27.000000) rotate(-180.000000) translate(-1115.140625, -27.000000) translate(1107.140625, 15.000000)">
+                    <g id="Shape">
+                        <use fill="#4D4D4D" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                        <use fill="none" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

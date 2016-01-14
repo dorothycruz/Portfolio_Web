@@ -27,17 +27,21 @@ body {
     font-size: 62.5%; //    1em = 10px
 }
 
-.intro {
+.home {
    background: #FFDB00;
 }
 
 a {
     text-decoration: none;
-    color: $basecolor;
+    
+    &.logo_c {
+        color: $basecolor;
+    }
     
     &.logotype {
     font-size: 2em; //20px
     font-weight: normal;
+    color: $basecolor;
     }
     
     > p.portfolio {
@@ -50,6 +54,7 @@ a {
     .social &:hover {
     border-bottom: 3px solid #fff;
     color: #fff;
+    color: $basecolor;
     }  
 }
 
@@ -65,12 +70,10 @@ nav {
     @include display(flex);
     @include flex-flow(row wrap);
     width: 95%;
-    @include justify-content(center);
         
     }
     
     li {
-    @include align-self(center);
     @include display(flex);
 	@include align-items(center);
     margin-right: 3%;
@@ -100,11 +103,10 @@ a.logo_c {
 /*index subcontent*/
 
 .intro2 {
-//    height: 300px;
     @include display(flex);
     @include flex-flow(column);
     @include align-items(center);
-    margin-top: 10%;
+    margin-top: 12em;
 }
 
 h1 {
@@ -115,7 +117,7 @@ h1 {
 h2 {
     font-size: 7.2em; //72px
     font-weight: normal;
-    margin-top: -10px;
+    margin-top: -0.3em;
 }
 
 h6 {
@@ -131,7 +133,7 @@ h6 {
 }
 
 .resume_downa {
-    margin-top: 7%;
+    margin-top: 9em;
 }
 
 #down {
@@ -139,7 +141,7 @@ h6 {
 }
 
 .resume_downt {
-    margin-top: 2%;
+    margin-top: 2em;
 }
 
 @include keyframes(bounce2) {
@@ -147,10 +149,10 @@ h6 {
     @include transform(translateY(0));
   }
   40% {
-    @include transform(translateY(-30px));
+    @include transform(translateY(-3em));
   }
   60% {
-    @include transform(translateY(-15px));
+    @include transform(translateY(-1.5em));
   }
 }
 
@@ -165,13 +167,13 @@ h6 {
 }
 
 section.profile {
-    display: flex;
+    @include display(flex);
     width: 90%;
 }
 
 h3.ptitle {
     font-size: 5em; //50px
-    margin-bottom: 20px;
+    margin-bottom: 0.6em;
 }
 
 p.pdescription {
@@ -201,9 +203,11 @@ hgroup {
 /*footer*/
 
 footer {
+	@include display(flex);
+	@include justify-content(center);
+	@include align-items(center);
     background-color: $basebg;
     text-align: center;
-    padding-top: 30px;
     height: 60px;
     font-size: 1.5em;
 }
@@ -216,23 +220,60 @@ footer {
     background-color: $basebg;
 }
 
-.grid2 {
+section.cover {
+//    width: 90%;
     @include display(flex);
-    justify-content: center;
-}
-
-div.grid {
-    @include display(flex);
-    @include justify-content(space-around);
     @include flex-flow(wrap);
-    width: 90%;
+    justify-content: center;
+    margin-top: 2em;  
+    margin-left: 1.5em;
+    width: 90%
 }
 
 section >div {
-    height: 400px;
-    flex: 1;
-    width: 300px;
-    margin-bottom: 5%;
+    min-height: 500px;
+    min-width: 27em;
+    margin-bottom: 1.5em;
+    margin-right: 1.5em;
+//    width: 300px;
+    @include flex(1);
+    align-content: center;
+}
+
+article {
+    &.cover_t {
+    margin: 2em 2em 2em 2em;
+    }
+    
+    &.tags {
+        @include display(flex);
+        
+        >p {
+           margin-right: 1.5em;
+            color: #fff;
+            font-size: 1.5em;
+        }
+    }
+}
+
+p.period {
+    font-size: 4em;
+    margin-top: -0.5em;
+    color: #fff;
+    letter-spacing: 0.08em;    
+}
+
+h4 {
+    color: #fff;
+    font-size: 2.2em;
+    letter-spacing: 0.04em;
+    font-weight: bold;
+    
+    &:hover {
+        border-bottom: 3px solid #fff;
+        color: #fff;
+        
+    }
 }
 
 .pailasq {
@@ -257,7 +298,7 @@ section >div {
 }
 
 .postersq {
-    background-color: #D8D8D8;
+    background-color: #414042;
 }
 
 .blendersq {
@@ -289,8 +330,12 @@ section >div {
   and (max-width: 480px) {
       
       body {
-    font-size: 50%; //    1em = 10px
-}
+          font-size: 60%; //    1em = 10px
+          @include display(flex);
+          @include flex-flow(column);
+        
+      }
+      
 
 }
     
