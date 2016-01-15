@@ -253,8 +253,8 @@ section.cover {
 section >div {
     max-height: 500px;
     min-height: 500px;
-    max-width: 30em;
-    min-width: 30em;
+    max-width: 35em;
+    min-width: 35em;
     margin-bottom: 1.5em;
     margin-right: 1.5em;
     overflow: hidden;
@@ -340,105 +340,196 @@ h4 {
     background-color: #FAFBFA;
 }
 
-
 /* --------------------------------------------------
-   cellphone screen styles
+   paila styles
 -----------------------------------------------------*/
 
-@media only screen 
-  and (min-width: 320px) 
-  and (max-width: 480px) {
-      
-      body {
-          font-size: 60%; //    1em = 10px
-          @include display(flex);
-          @include flex-flow(column);
-        
-      }
-      
-      h1 {
-          font-size: 7em;
-      }
-      
-      h2 {
-          font-size: 3.2em;
-      }
-      
-      h3.ptitle {
-          font-size: 3em;
-      }
-      
-      section.profile {
-          display: block;
-          margin-top: 4em;
-      }
-      
-      article.links {
-          @include display(flex);
-          @include flex-flow(row); 
-          @include justify-content(space-around);
-          @include align-items(center);
-          margin-top: 4em;
-      }
-      
-      .intro2 {
-        @include display(flex);
-        @include flex-flow(column);
-        @include align-items(center);
-        margin-top: 15em;
-        }
-
-        .resume_downa {
-        margin-top: 10em;
-        }
-
-        .resume_downt {
-        margin-top: 2em;
-        }
-
-}
-    
-/* --------------------------------------------------
-   tablet screen styles
------------------------------------------------------*/
-
-@media only screen
-    and (min-width: 480px)
-    and (max-width: 768px) {
-      body {
-          font-size: 60%; //    1em = 10px
-          @include display(flex);
-          @include flex-flow(column);
-        
-      }
-        
-        h2 {
-          font-size: 6em;
-      }
-        
-        .intro2 {
+section.introp {
     @include display(flex);
     @include flex-flow(column);
-    @include align-items(center);
-    margin-top: 24em;
-        
-            
-            #resume {
-                height: 1024px;
-            }
-        
-      .resume_downa {
-        margin-top: 25em;
-        }
+    @include justify-content(center);
+    margin-top: 4em;
+    
+    
+    > article {
+        @include display(flex);
+        @include flex-flow(row);
+        width: 87%;
+    }
+}
 
-        .resume_downt {
-        margin-top: 2em;
-        }
-        
-        h3.ptitle {
-          font-size: 4.5em;
-      }
-
+li.logo.white > a{
+    color: #fff;
 }
     
+.paragraph {
+    color: #fff;
+    font-size: 2.5em;
+    line-height: 1.6em;
+    font-weight: normal;
+}
+
+.p-img-space {
+    margin-right: 10em;
     
+}
+
+.pailaimg {
+    height: 100%;
+    width: 315px;
+}
+article.tags2 {
+    @include display(flex);
+
+    >p {
+       margin-right: 1.5em;
+        color: #fff;
+        font-size: 2.5em;
+        font-weight: normal;
+    }
+}
+
+p.period2 {
+    font-size: 10em;
+    margin-top: -0.5em;
+    color: #fff;
+    letter-spacing: 0.08em;    
+}
+
+a.center_downa {
+    @include align-self(center);
+}
+
+h1.titles {
+    font-size: 5em;
+    color: #fff;
+    
+}
+
+/* --------------------------------------------------
+   paypal styles
+-----------------------------------------------------*/
+
+.paypalimg {
+    height: 100%;
+    width: 420px;
+    
+}
+
+/* --------------------------------------------------
+   ocd styles
+-----------------------------------------------------*/
+
+.black > h1{
+    color: $basecolor;   
+}
+
+.black > p{
+    color: $basecolor;   
+}
+
+p.black {
+    color: $basecolor;
+}
+
+
+///* --------------------------------------------------
+//   cellphone screen styles
+//-----------------------------------------------------*/
+//
+//@media only screen 
+//  and (min-width: 320px) 
+//  and (max-width: 480px) {
+//      
+//      body {
+//          font-size: 60%; //    1em = 10px
+//          @include display(flex);
+//          @include flex-flow(column);
+//        
+//      }
+//      
+//      h1 {
+//          font-size: 7em;
+//      }
+//      
+//      h2 {
+//          font-size: 3.2em;
+//      }
+//      
+//      h3.ptitle {
+//          font-size: 3em;
+//      }
+//      
+//      section.profile {
+//          display: block;
+//          margin-top: 4em;
+//      }
+//      
+//      article.links {
+//          @include display(flex);
+//          @include flex-flow(row); 
+//          @include justify-content(space-around);
+//          @include align-items(center);
+//          margin-top: 4em;
+//      }
+//      
+//      .intro2 {
+//        @include display(flex);
+//        @include flex-flow(column);
+//        @include align-items(center);
+//        margin-top: 15em;
+//        }
+//
+//        .resume_downa {
+//        margin-top: 10em;
+//        }
+//
+//        .resume_downt {
+//        margin-top: 2em;
+//        }
+//
+//}
+//    
+///* --------------------------------------------------
+//   tablet screen styles
+//-----------------------------------------------------*/
+//
+//@media only screen
+//    and (min-width: 480px)
+//    and (max-width: 768px) {
+//      body {
+//          font-size: 60%; //    1em = 10px
+//          @include display(flex);
+//          @include flex-flow(column);
+//        
+//      }
+//        
+//        h2 {
+//          font-size: 6em;
+//      }
+//        
+//        .intro2 {
+//    @include display(flex);
+//    @include flex-flow(column);
+//    @include align-items(center);
+//    margin-top: 24em;
+//        
+//            
+//            #resume {
+//                height: 1024px;
+//            }
+//        
+//      .resume_downa {
+//        margin-top: 25em;
+//        }
+//
+//        .resume_downt {
+//        margin-top: 2em;
+//        }
+//        
+//        h3.ptitle {
+//          font-size: 4.5em;
+//      }
+//
+//}
+//    
