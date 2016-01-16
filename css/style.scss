@@ -365,15 +365,101 @@ div.grid-hover:hover{
    history of design styles
 -----------------------------------------------------*/
 
+.info-imgage {
+    width: 20%;
+    height: 100%;
+}
+
 #info-img {
     width: 65%;
-    height: auto;
+    height: 65%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0;
     margin: 4em 0 4em 0;
 }
 
 .history-content {
-    background-color: #FAFBFA; 
+    background-color: #FAFBFA;
+    @include display(flex);
+    @include flex-flow(column);
+    
+}
+
+.history-center {
+    @include display(flex);
+    @include justify-content(center);
+}
+
+.video-history-center {
+    @include display(flex);
+    @include flex-flow(column);
+    @include align-items(center);
+    margin-top: 4em;
+    font-size: 2em; //20px
+    font-weight: normal;
+    color: $basecolor;
+    
+    > p {
+        text-align: center;
+        
+        > a {
+           color: $basecolor; 
+        }
+
+    }
+}
+
+/* --------------------------------------------------
+   javaS-1 styles
+-----------------------------------------------------*/
+
+#javas-html {
+    width: 80%;
+    min-height: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0;  
+    margin: 2em 0 9em 0;
+    @include display(flex);
+    @include justify-content(center);
+    cursor: pointer;
+}
+
+.java-grid {
+    @include display(flex);
+    @include justify-content(center);
+    
+}
+
+.javas-content {
+    align-self: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* --------------------------------------------------
+   javaS-2 styles
+-----------------------------------------------------*/
+
+#javas2-html {
+    width: 80%;
+    min-height: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0;  
+    margin: 2em 0 9em 0;
+    @include display(flex);
+    @include justify-content(center);
+    cursor: pointer;
+    background-color: #000;
+}
+
+.java2-grid {
+    @include display(flex);
+    @include flex-flow(column);
+    @include align-items(center);
+    
+}
+
+.javas2-content {
+    align-self: center;
+    font-size: 2em;
+    cursor: pointer;
 }
 
 /* --------------------------------------------------
@@ -385,27 +471,32 @@ div.grid-hover:hover{
     width: 20%;
 }
 
+.addams-grid {
+    @include display(flex);
+    @include justify-content(center);
+}
+
 .addams-content {
-    background-image: url(../img/addams/Spider-Web-7.png);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    background: url(../img/addams/Spider-Web-7.png) no-repeat center center;
+    background-size: cover;
 }
 
 #addams-img {
-    width: 70%;
-    height: auto;
+    width: 80%;
+    height: 80%;
     box-shadow: 0 0px 58px 30px rgba(0, 0, 0, 1);
+    margin: 6rem 0 6rem 0;
 }
 
 .characters {
     @include display(flex);
     @include flex-flow(wrap);
     @include justify-content(center);
-    padding-top: 6rem;
+    padding: 6rem 0 6rem 0;
     
     > div {
-       margin-right: 2em;
-        margin-bottom: 2rem;
+        margin-right: 2em;
+        margin-bottom: 3rem;
     }
 }
 
