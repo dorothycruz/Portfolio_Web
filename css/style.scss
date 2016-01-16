@@ -250,7 +250,7 @@ section.cover {
     width: 90%
 }
 
-section >div {
+section.cover > div {
     max-height: 500px;
     min-height: 500px;
     max-width: 35em;
@@ -271,7 +271,7 @@ article {
         >p {
            margin-right: 1.5em;
             color: #fff;
-            font-size: 1.5em;
+            font-size: 1.8em;
         }
     }
 }
@@ -288,11 +288,10 @@ h4 {
     font-size: 2.6em;
     letter-spacing: 0.04em;
     font-weight: bold;
-    
-    &:hover {
-        border-bottom: 3px solid #fff;
-        color: #fff;
-    }
+}
+
+div.grid-hover:hover{
+    opacity: 0.5;
 }
 
 .pailasq {
@@ -309,7 +308,7 @@ h4 {
 
 
 .bublesq {
-    background-color: #BD1C42;
+    background-color: #C61E4B;
 }
 
 .addamsq {
@@ -341,6 +340,77 @@ h4 {
 }
 
 /* --------------------------------------------------
+   buble styles
+-----------------------------------------------------*/
+
+.buble-content {
+    @include display(flex);
+    @include align-items(center);
+    background-color: #C61E4B;
+    @include flex-flow(column);
+}
+
+#buble-img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 6em;
+    margin-top: 2em;
+}
+
+#buble-video {
+    margin-bottom: 6em;
+}
+
+/* --------------------------------------------------
+   history of design styles
+-----------------------------------------------------*/
+
+#info-img {
+    width: 65%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0;
+    margin: 4em 0 4em 0;
+}
+
+.history-content {
+    background-color: #FAFBFA; 
+}
+
+/* --------------------------------------------------
+   addams styles
+-----------------------------------------------------*/
+
+#addams-svg {
+    height: 100%;
+    width: 20%;
+}
+
+.addams-content {
+    background-image: url(../img/addams/Spider-Web-7.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+#addams-img {
+    width: 70%;
+    height: auto;
+    box-shadow: 0 0px 58px 30px rgba(0, 0, 0, 1);
+}
+
+.characters {
+    @include display(flex);
+    @include flex-flow(wrap);
+    @include justify-content(center);
+    padding-top: 6rem;
+    
+    > div {
+       margin-right: 2em;
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* --------------------------------------------------
    paila styles
 -----------------------------------------------------*/
 
@@ -369,6 +439,12 @@ li.logo.white > a{
     font-weight: normal;
 }
 
+.paragraph2 {
+    font-size: 2.5em;
+    line-height: 1.6em;
+    font-weight: normal;
+}
+
 .p-img-space {
     margin-right: 10em;
     
@@ -378,12 +454,23 @@ li.logo.white > a{
     height: 100%;
     width: 315px;
 }
+
 article.tags2 {
     @include display(flex);
 
     >p {
        margin-right: 1.5em;
         color: #fff;
+        font-size: 2.5em;
+        font-weight: normal;
+    }
+}
+
+article.tags3 {
+    @include display(flex);
+
+    >p {
+       margin-right: 1.5em;
         font-size: 2.5em;
         font-weight: normal;
     }
@@ -396,14 +483,23 @@ p.period2 {
     letter-spacing: 0.08em;    
 }
 
+p.period3 {
+    font-size: 10em;
+    margin-top: -0.5em;
+    letter-spacing: 0.08em;    
+}
+
 a.center_downa {
     @include align-self(center);
 }
 
 h1.titles {
     font-size: 5em;
-    color: #fff;
-    
+    color: #fff;   
+}
+
+h1.titles2 {
+    font-size: 5em;  
 }
 
 /* --------------------------------------------------
