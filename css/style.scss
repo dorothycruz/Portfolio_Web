@@ -244,7 +244,7 @@ div.grid {
 section.cover {
     @include display(flex);
     @include flex-flow(wrap);
-    @include justify-content(center);
+    @include justify-content(flex-start);
     margin-top: 2em;  
     margin-left: 1.5em;
     width: 90%
@@ -362,6 +362,40 @@ div.grid-hover:hover{
 }
 
 /* --------------------------------------------------
+   posters styles
+-----------------------------------------------------*/
+
+.posters-flex {
+    @include display(flex);
+    @include justify-content(center);
+    margin-bottom: 3em;
+}
+
+.posters-shadow {
+    width: 50%;
+    height: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0;
+    margin: 0 0 3em 0;
+}
+
+.poster-text {
+    color: $basecolor;
+    font-size: 2em;
+    padding: 3em 0 3em 0;
+}
+
+.posters-names {
+    background-color: #D8D8D8;
+}
+
+.zum-shadow {
+//    width: 50%;
+//    height: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0;
+    margin: 0 0 3em 0;
+}
+
+/* --------------------------------------------------
    history of design styles
 -----------------------------------------------------*/
 
@@ -460,6 +494,37 @@ div.grid-hover:hover{
     align-self: center;
     font-size: 2em;
     cursor: pointer;
+}
+
+/* --------------------------------------------------
+   blender styles
+-----------------------------------------------------*/
+
+.blender-text {
+    font-size: 2em;
+    color: #fff;
+}
+
+.blender-width2 {
+    width:  80%;
+}
+
+.blender-grid {
+    @include display(flex);
+    @include align-items(center);
+    @include flex-flow(wrap);
+}
+
+.graysq {
+    background-color: #D8D8D8;
+    color: $bodytext;
+    font-size: 2em;
+    text-align: center;
+    padding: 3em 0 3em 0;
+}
+
+.blender-div {
+    flex: 1;
 }
 
 /* --------------------------------------------------
@@ -620,62 +685,62 @@ p.black {
 }
 
 
-///* --------------------------------------------------
-//   cellphone screen styles
-//-----------------------------------------------------*/
-//
-//@media only screen 
-//  and (min-width: 320px) 
-//  and (max-width: 480px) {
-//      
-//      body {
-//          font-size: 60%; //    1em = 10px
-//          @include display(flex);
-//          @include flex-flow(column);
-//        
-//      }
-//      
-//      h1 {
-//          font-size: 7em;
-//      }
-//      
-//      h2 {
-//          font-size: 3.2em;
-//      }
-//      
-//      h3.ptitle {
-//          font-size: 3em;
-//      }
-//      
-//      section.profile {
-//          display: block;
-//          margin-top: 4em;
-//      }
-//      
-//      article.links {
-//          @include display(flex);
-//          @include flex-flow(row); 
-//          @include justify-content(space-around);
-//          @include align-items(center);
-//          margin-top: 4em;
-//      }
-//      
-//      .intro2 {
-//        @include display(flex);
-//        @include flex-flow(column);
-//        @include align-items(center);
-//        margin-top: 15em;
-//        }
-//
-//        .resume_downa {
-//        margin-top: 10em;
-//        }
-//
-//        .resume_downt {
-//        margin-top: 2em;
-//        }
-//
-//}
+/* --------------------------------------------------
+   cellphone screen styles
+-----------------------------------------------------*/
+
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 480px) {
+      
+      body {
+          font-size: 60%; //    1em = 10px
+          @include display(flex);
+          @include flex-flow(column);
+        
+      }
+      
+      h1 {
+          font-size: 7em;
+      }
+      
+      h2 {
+          font-size: 3.2em;
+      }
+      
+      h3.ptitle {
+          font-size: 3em;
+      }
+      
+      section.profile {
+          display: block;
+          margin-top: 4em;
+      }
+      
+      article.links {
+          @include display(flex);
+          @include flex-flow(row); 
+          @include justify-content(space-around);
+          @include align-items(center);
+          margin-top: 4em;
+      }
+      
+      .intro2 {
+        @include display(flex);
+        @include flex-flow(column);
+        @include align-items(center);
+        margin-top: 15em;
+        }
+
+        .resume_downa {
+        margin-top: 10em;
+        }
+
+        .resume_downt {
+        margin-top: 2em;
+        }
+
+}
 //    
 ///* --------------------------------------------------
 //   tablet screen styles
