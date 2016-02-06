@@ -291,7 +291,79 @@ h4 {
 }
 
 div.grid-hover:hover{
-    opacity: 0.5;
+    opacity: 0.7;
+}
+
+#image-paila {
+    margin-left: 53px;
+    
+}
+
+h4.black, article.tags.black > p {
+    color: $basecolor;
+}
+
+#image-paypal {
+    margin-left: 18px;
+    width: 90%;
+    height: 90%;
+    margin-top: 50px;
+}
+
+#image-zum {
+    margin-left: 35px;
+    width: 80%;
+    height: 80%;
+}
+
+
+
+#image-quater {
+    margin-left: 18px;
+    width: 90%;
+    height: 90%;
+    margin-top: 50px;
+}
+
+#image-ocd {
+    margin-left: -130px;
+    width: 140%;
+    height: 90%;
+    margin-top: 50px;
+}
+
+#image-history {
+    width: 80%;
+    height: 80%;
+    margin-top: -30px;
+    margin-left: 30px;
+}
+
+#image-blender {
+    width: 90%;
+    height: 90%;
+    margin-left: 20px;
+}
+
+#image-buble {
+    width: 85%;
+    height: 85%;
+    margin-left: 20px; 
+    margin-top: 15px;
+}
+
+#image-addams {
+    width: 60%;
+    height: 60%;
+    margin-top: -160px;
+    margin-left: 150px;
+}
+
+#image-releve {
+    width: 80%;
+    height: 80%;
+    margin-left: 33px;
+    margin-top: 7px;
 }
 
 .pailasq {
@@ -534,6 +606,12 @@ div.grid-hover:hover{
 #addams-svg {
     height: 100%;
     width: 20%;
+    margin-right: -81px;
+}
+
+.arrows-each {
+    top: 87%;
+    position: absolute;
 }
 
 .addams-grid {
@@ -683,6 +761,7 @@ h1.titles2 {
 p.black {
     color: $basecolor;
 }
+
 
 
 /* --------------------------------------------------
