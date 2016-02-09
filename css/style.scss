@@ -108,11 +108,11 @@ a.logo_c {
     @include display(flex);
     @include flex-flow(column);
     @include align-items(center);
-    margin-top: 12em;
+    margin-top: 13em;
 }
 
 .resume_downa {
-    margin-top: 7em;
+    margin-top: 9em;
 }
 
 .resume_downt {
@@ -120,14 +120,14 @@ a.logo_c {
 }
 
 h1 {
-    font-size: 9em;
+    font-size: 8em;
     font-weight: bold;
 }
 
 h2 {
-    font-size: 7.2em; //72px
+    font-size: 6em; //72px
     font-weight: normal;
-    margin-top: -0.3em;
+    margin-bottom: 0.1em;
 }
 
 h6 {
@@ -138,7 +138,7 @@ h6 {
 
 
 .change {
-    font-size: 4em; //40px
+    font-size: 3em; //40px
     font-weight: lighter;
 } 
 
@@ -151,7 +151,7 @@ h6 {
     @include transform(translateY(0));
   }
   40% {
-    @include transform(translateY(-3em));
+    @include transform(translateY(-2em));
   }
   60% {
     @include transform(translateY(-1.5em));
@@ -174,12 +174,12 @@ section.profile {
 }
 
 h3.ptitle {
-    font-size: 5em; //50px
+    font-size: 4.5em; //50px
     margin-bottom: 0.6em;
 }
 
 p.pdescription {
-    font-size: 2.5em; //25px
+    font-size: 2em; //25px
     font-weight: normal;
     color: $bodytext;
 }
@@ -235,19 +235,18 @@ footer {
     background-color: $basebg;
 }
 
-
 div.grid {
     @include display(flex);
-    @include justify-content(center);
+    @include justify-content(space-around);
 }
 
 section.cover {
     @include display(flex);
     @include flex-flow(wrap);
-    @include justify-content(flex-start);
+    @include justify-content(center);
     margin-top: 2em;  
     margin-left: 1.5em;
-    width: 90%
+//    width: 90%;
 }
 
 section.cover > div {
