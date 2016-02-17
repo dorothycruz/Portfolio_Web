@@ -319,8 +319,6 @@ h4.black, article.tags.black > p {
     height: 80%;
 }
 
-
-
 #image-quater {
     margin-left: 18px;
     width: 90%;
@@ -369,6 +367,12 @@ h4.black, article.tags.black > p {
     margin-top: 7px;
 }
 
+#image-posters {
+    width: 85%;
+    height: 85%;
+    margin-left: 26px;
+}
+
 .pailasq {
     background-color: #FA6D20;
 }
@@ -415,6 +419,60 @@ h4.black, article.tags.black > p {
 }
 
 /* --------------------------------------------------
+   zumzum styles
+-----------------------------------------------------*/
+
+img.team-photos {
+    width: 70%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 13px;  //    center image without using margin
+}
+
+p.name, p.position {
+    color: #fff;
+    font-size: 1.3em;
+    text-align: center
+}
+
+.team {
+    @include display(flex);
+}
+
+.zum-icons {
+    width: 70%;
+    @include display(flex);
+    @include flex-flow(wrap);
+    justify-content: center;
+}
+
+.zum-menu {
+    margin-right: 3em;
+    margin-bottom: 3em;
+}
+
+div.zum-align {
+    @include display(flex);
+    @include justify-content(center);
+}
+
+.zum-column{
+    flex-direction: column;
+}
+
+.zum-logo {
+    margin: 4em 0 4em 0;
+}
+
+img.zum-shadow {
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0;
+    margin: 0 0 3em 0;
+}
+
+
+/* --------------------------------------------------
    buble styles
 -----------------------------------------------------*/
 
@@ -433,7 +491,8 @@ h4.black, article.tags.black > p {
 }
 
 #buble-video {
-    margin-bottom: 6em;
+    margin-bottom: 5em;
+    margin-top: -4em;
 }
 
 /* --------------------------------------------------
@@ -461,13 +520,6 @@ h4.black, article.tags.black > p {
 
 .posters-names {
     background-color: #D8D8D8;
-}
-
-.zum-shadow {
-//    width: 50%;
-//    height: 40%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0;
-    margin: 0 0 3em 0;
 }
 
 /* --------------------------------------------------
@@ -671,13 +723,13 @@ li.logo.white > a{
     
 .paragraph {
     color: #fff;
-    font-size: 2.5em;
+    font-size: 2.2em;
     line-height: 1.6em;
     font-weight: normal;
 }
 
 .paragraph2 {
-    font-size: 2.5em;
+    font-size: 2.2em;
     line-height: 1.6em;
     font-weight: normal;
 }
@@ -731,12 +783,12 @@ a.center_downa {
 }
 
 h1.titles {
-    font-size: 5em;
+    font-size: 4em;
     color: #fff;   
 }
 
 h1.titles2 {
-    font-size: 5em;  
+    font-size: 4em;  
 }
 
 /* --------------------------------------------------

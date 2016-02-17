@@ -473,6 +473,11 @@ h4.black, article.tags.black > p {
   margin-left: 33px;
   margin-top: 7px; }
 
+#image-posters {
+  width: 85%;
+  height: 85%;
+  margin-left: 26px; }
+
 .pailasq {
   background-color: #FA6D20; }
 
@@ -507,6 +512,77 @@ h4.black, article.tags.black > p {
   background-color: #FAFBFA; }
 
 /* --------------------------------------------------
+   zumzum styles
+-----------------------------------------------------*/
+img.team-photos {
+  width: 70%;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 13px; }
+
+p.name, p.position {
+  color: #fff;
+  font-size: 1.3em;
+  text-align: center; }
+
+.team {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.zum-icons {
+  width: 70%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: wrap;
+  -moz-flex-flow: wrap;
+  flex-flow: wrap;
+  justify-content: center; }
+
+.zum-menu {
+  margin-right: 3em;
+  margin-bottom: 3em; }
+
+div.zum-align {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center; }
+
+.zum-column {
+  flex-direction: column; }
+
+.zum-logo {
+  margin: 4em 0 4em 0; }
+
+img.zum-shadow {
+  width: 80%;
+  height: 80%;
+  box-shadow: 0 4px 8px 0 transparent, 0 6px 20px 0;
+  margin: 0 0 3em 0; }
+
+/* --------------------------------------------------
    buble styles
 -----------------------------------------------------*/
 .buble-content {
@@ -538,7 +614,8 @@ h4.black, article.tags.black > p {
   margin-top: 2em; }
 
 #buble-video {
-  margin-bottom: 6em; }
+  margin-bottom: 5em;
+  margin-top: -4em; }
 
 /* --------------------------------------------------
    posters styles
@@ -575,10 +652,6 @@ h4.black, article.tags.black > p {
 
 .posters-names {
   background-color: #D8D8D8; }
-
-.zum-shadow {
-  box-shadow: 0 4px 8px 0 transparent, 0 6px 20px 0;
-  margin: 0 0 3em 0; }
 
 /* --------------------------------------------------
    history of design styles
@@ -903,12 +976,12 @@ li.logo.white > a {
 
 .paragraph {
   color: #fff;
-  font-size: 2.5em;
+  font-size: 2.2em;
   line-height: 1.6em;
   font-weight: normal; }
 
 .paragraph2 {
-  font-size: 2.5em;
+  font-size: 2.2em;
   line-height: 1.6em;
   font-weight: normal; }
 
@@ -964,11 +1037,11 @@ a.center_downa {
   -ms-flex-item-align: center; }
 
 h1.titles {
-  font-size: 5em;
+  font-size: 4em;
   color: #fff; }
 
 h1.titles2 {
-  font-size: 5em; }
+  font-size: 4em; }
 
 /* --------------------------------------------------
    paypal styles
