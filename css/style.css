@@ -19,6 +19,9 @@ body {
 .home {
   background: #FFDB00; }
 
+a > p.portfolio.menu-bold {
+  font-weight: bolder; }
+
 a {
   text-decoration: none; }
   a.logo_c {
