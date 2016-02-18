@@ -439,11 +439,24 @@ p.name, p.position {
     @include display(flex);
 }
 
-.zum-icons {
-    width: 70%;
+.zum-icons, .zum-process {
     @include display(flex);
     @include flex-flow(wrap);
-    justify-content: center;
+    @include justify-content(center);
+}
+
+.zum-icons {
+    width: 70%;
+}
+
+.zum-process {
+    width: 85%;
+}
+
+.zum-website {
+    width: 85%;
+    @include display(flex);
+    @include flex-flow(wrap);
 }
 
 .zum-menu {
@@ -451,13 +464,19 @@ p.name, p.position {
     margin-bottom: 3em;
 }
 
+.zum-flow {
+    width: 100%;
+    height: 100%;
+}
+
+
 div.zum-align {
     @include display(flex);
     @include justify-content(center);
 }
 
 .zum-column{
-    flex-direction: column;
+    @include flex-direction(column);
 }
 
 .zum-logo {
@@ -465,10 +484,15 @@ div.zum-align {
 }
 
 img.zum-shadow {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0;
-    margin: 0 0 3em 0;
+    margin: 0 0 7em 0;
+}
+
+#zum-web {
+    width: 50%;
+    height: 50%
 }
 
 
