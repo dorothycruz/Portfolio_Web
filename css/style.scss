@@ -419,6 +419,14 @@ h4.black, article.tags.black > p {
 }
 
 /* --------------------------------------------------
+   releve styles
+-----------------------------------------------------*/
+
+.releve-dark-bg {
+    background-color: #231F20;
+}
+
+/* --------------------------------------------------
    zumzum styles
 -----------------------------------------------------*/
 
@@ -566,10 +574,9 @@ img.zum-shadow {
     background-color: #FAFBFA;
     @include display(flex);
     @include flex-flow(column);
-    
 }
 
-.history-center {
+.history-center, div.link-history, .info-video {
     @include display(flex);
     @include justify-content(center);
 }
@@ -577,7 +584,6 @@ img.zum-shadow {
 .video-history-center {
     @include display(flex);
     @include flex-flow(column);
-    @include align-items(center);
     margin-top: 4em;
     font-size: 2em; //20px
     font-weight: normal;
@@ -591,6 +597,10 @@ img.zum-shadow {
         }
 
     }
+}
+
+a#info-video, p.p-center {
+    text-align: center
 }
 
 /* --------------------------------------------------
