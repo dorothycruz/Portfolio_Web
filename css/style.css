@@ -512,6 +512,12 @@ h4.black, article.tags.black > p {
   background-color: #FAFBFA; }
 
 /* --------------------------------------------------
+   releve styles
+-----------------------------------------------------*/
+.releve-dark-bg {
+  background-color: #231F20; }
+
+/* --------------------------------------------------
    zumzum styles
 -----------------------------------------------------*/
 img.team-photos {
@@ -722,7 +728,7 @@ img.zum-shadow {
   -moz-flex-flow: column;
   flex-flow: column; }
 
-.history-center {
+.history-center, div.link-history, .info-video {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -751,15 +757,6 @@ img.zum-shadow {
   -webkit-flex-flow: column;
   -moz-flex-flow: column;
   flex-flow: column;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  -ms-flex-align: center;
   margin-top: 4em;
   font-size: 2em;
   font-weight: normal;
@@ -768,6 +765,9 @@ img.zum-shadow {
     text-align: center; }
     .video-history-center > p > a {
       color: #4D4D4D; }
+
+a#info-video, p.p-center {
+  text-align: center; }
 
 /* --------------------------------------------------
    javaS-1 styles
