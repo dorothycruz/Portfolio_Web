@@ -16,7 +16,6 @@
 	"tasks": [
 		{
 			// Build task, Ctrl+Shift+B
-			// "npm install --loglevel info"
 			"taskName": "install",
 			"isBuildCommand": true,
 			"args": [
@@ -26,8 +25,6 @@
 			]
 		},
 		{
-			// Test task, Ctrl+Shift+T
-			// "npm start"
 			"taskName": "start",
 			"isTestCommand": true,
 			"args": [ "start" ]

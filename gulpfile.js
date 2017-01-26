@@ -22,7 +22,7 @@ gulp.task('sass', function () {
         .pipe(sass({
             includePaths: require('bourbon').includePaths
         }))
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest("./css"))
         .pipe(browserSync.stream());
 });
