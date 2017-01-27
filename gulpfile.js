@@ -5,7 +5,7 @@ var browserSync = require('browser-sync').create();
 
 // Static Server + watching scss/html files
 gulp.task('default', ['sass'], function () {
-
+    
     browserSync.init({
         server: ".",
         port: 8080

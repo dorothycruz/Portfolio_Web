@@ -1,3 +1,35 @@
+/************************************
+ * Close button
+************************************/
+#closebt-container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px; }
+
+.closebt {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer; }
+
+.closebt:hover {
+  transform: rotate(90deg); }
+
+#modal-content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#modal-content > div {
+  opacity: 1;
+  display: block;
+  transform: scaleX(1) scaleY(1);
+  transform-origin: 50% 50% 0px; }
+
 /* --------------------------------------------------
    index style
 -----------------------------------------------------*/
