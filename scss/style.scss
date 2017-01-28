@@ -1,11 +1,11 @@
-@import "bourbon";
-@import "main";
-// @import "portfolio";
-
 $basefont: "source-sans-pro", sans-serif;
 $basecolor: #4D4D4D;
 $bodytext: #7E7E7E;
 $basebg: #EFEFEF;
+
+@import "bourbon";
+@import "main";
+// @import "portfolio";
 
 /* --------------------------------------------------
    index style
