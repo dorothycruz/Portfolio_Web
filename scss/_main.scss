@@ -42,10 +42,11 @@
 }
 
 #bookmark-size {
-    width: 9%;
+    width: 8%;
     height: auto;
-    margin-top: -14px;
+    margin-top: 9px;
     margin-right: 14px;
+    max-height: 97px;
 }
 
 #download-size {
@@ -57,6 +58,7 @@
 div#name-intro {
     @include display(flex);
     @include flex-direction(row);
+    @include justify-content(center);
 }
 
 div#download-intro {
